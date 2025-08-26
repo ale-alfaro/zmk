@@ -2,7 +2,7 @@
 /bootloader
 /modules
 /tools
-/zephyr
+# /zephyr
 /zmk-config
 /build
 
@@ -16,3 +16,4 @@ __pycache__
 
 # clangd
 app/.cache/
+build*/
