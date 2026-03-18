@@ -713,5 +713,5 @@ osource "$(ZMK_CONFIG)/boards/shields/*/Kconfig.shield"
 
 # This loads ZMK's sensible defaults
 rsource "Kconfig.defaults"
+rsource "module/Kconfig"
 
-source "Kconfig.zephyr"

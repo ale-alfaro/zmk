@@ -1,0 +1,6 @@
+build:
+  cmake: app
+  kconfig: app/Kconfig
+  settings:
+    dts_root: app
+    board_root: app

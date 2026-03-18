@@ -1,9 +1,9 @@
 # Copyright (c) 2023 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-target_sources_ifdef(CONFIG_SETTINGS_NONE app PRIVATE reset_settings_none.c)
-target_sources_ifdef(CONFIG_SETTINGS_FCB app PRIVATE reset_settings_fcb.c)
-target_sources_ifdef(CONFIG_SETTINGS_FILE app PRIVATE reset_settings_file.c)
-target_sources_ifdef(CONFIG_SETTINGS_NVS app PRIVATE reset_settings_nvs.c)
+zephyr_library_sources_ifdef(CONFIG_SETTINGS_NONE reset_settings_none.c)
+zephyr_library_sources_ifdef(CONFIG_SETTINGS_FCB reset_settings_fcb.c)
+zephyr_library_sources_ifdef(CONFIG_SETTINGS_FILE reset_settings_file.c)
+zephyr_library_sources_ifdef(CONFIG_SETTINGS_NVS reset_settings_nvs.c)
 
-target_sources_ifdef(CONFIG_ZMK_SETTINGS_RESET_ON_START app PRIVATE reset_settings_on_start.c)
+zephyr_library_sources_ifdef(CONFIG_ZMK_SETTINGS_RESET_ON_START reset_settings_on_start.c)
