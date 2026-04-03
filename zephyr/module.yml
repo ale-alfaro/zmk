@@ -1,3 +1,4 @@
+name: zmk
 build:
   cmake: app
   kconfig: app/Kconfig
